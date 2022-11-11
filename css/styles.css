@@ -137,6 +137,7 @@ address {
 
 .nav-link,
 .header-contacts {
+	position: relative;
 	display: inline-block;
 	font-weight: 500;
 	line-height: calc(16 / 14);
@@ -157,6 +158,20 @@ address {
 
 .active {
 	color: var(--brand);
+}
+
+.active::after {
+	content: '';
+	display: block;
+	position: absolute;
+	align-items: center;
+  	width: 108%;
+	right: -4%;
+	height: 4px;
+	bottom: -1px;
+	margin: 0;
+	background-color: #2196F3;
+	border-radius: 2px;
 }
 
 .header-contacts {
